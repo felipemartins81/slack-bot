@@ -5,8 +5,8 @@ let SpotifyWebApi 	= require('spotify-web-api-node'),
 
 // credentials are optional
 let spotifyApi = new SpotifyWebApi({
-	clientId : '74fe907eef6f4b37b9426c24453178ef',
-	clientSecret : 'ae3ec3588fed4be5b822bd160dc2ff14',
+	clientId : '',
+	clientSecret : '',
 	redirectUri : 'http://vast-stream-13353.herokuapp.com'
 });
 

@@ -19,7 +19,7 @@ let appUrl  = 'http://vast-stream-13353.herokuapp.com',
     let SlackBot = require('slackbots');
 
     let bot = new SlackBot({
-        token: 'xoxb-189695099271-GWjAwY3LJJ2vtwglZFl4adqi',
+        token: '',
         name: 'The Monster Bot'
     });
 
@@ -208,7 +208,7 @@ let appUrl  = 'http://vast-stream-13353.herokuapp.com',
     function searchPlaceToLunch(){
         let placesApi    = 'https://maps.googleapis.com/maps/api/place/textsearch/json';
         let placeSearch  = phrases.getSearchTermsToLunch() +'+vila+olimpia+sao+paulo';
-        let googleApiKey = 'AIzaSyBFPfMwiQm9xnNwZAAmrn8O5OJ5kO1ndl0';
+        let googleApiKey = '';
         let endpoint     = placesApi +'?query='+ placeSearch +'&key='+ googleApiKey;
 
         request( endpoint, (error, response, body) => {
